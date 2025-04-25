@@ -1,0 +1,126 @@
+/* Family.css */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.member-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.member-group.ayah-&-ibu {
+  justify-content: center;
+}
+
+.member-group .card {
+  flex: 1 1 250px; /* Minimal lebar card */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.family-title {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: white;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.card {
+  width: 200px; /* sebelumnya 250px */
+  background: white;
+  border-radius: 20px !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-text {
+  line-height: 1rem;
+}
+
+.card img {
+  height: 300px; /* sebelumnya 480px */
+  object-fit: cover;
+  border-radius: 8%;
+  margin: 1rem auto 0;
+  display: block;
+}
+
+.family-card {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.family-card:hover {
+  transform: scale(1.03);
+}
+
+.family-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  background-color: #f0f0f0; /* opsional: latar belakang kalau gambar transparan */
+}
+
+.family-card h5 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  color: #333;
+}
+
+.family-card p {
+  margin: 0.25rem 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 160px;
+  }
+
+  .card img {
+    height: 240px;
+  }
+
+  .card-body h5 {
+    font-size: 1rem;
+  }
+
+  .card-text {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,105 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("../../assets/images/webbackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Wrapper untuk menghindari konten terpotong */
+.home-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Section utama */
+.home {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Judul Tengah */
+.text-style h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.7);
+  margin: 2rem 0;
+}
+
+/* Container Card */
+.container-home {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1000px;
+  width: 90%;
+}
+
+/* Card */
+.custom-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  border-radius: 1rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  background-color: #fdfdfd;
+  transition: transform 0.3s ease;
+}
+
+.custom-card:hover {
+  transform: scale(1.03);
+}
+
+/* Foto */
+.custom-card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+/* Nama */
+.custom-card h5 {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .text-style h1 {
+    font-size: 2rem;
+  }
+
+  .custom-card {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-style h1 {
+    font-size: 1.6rem;
+    line-height: 1.4;
+  }
+
+  .container-home {
+    padding: 1rem;
+  }
+}
