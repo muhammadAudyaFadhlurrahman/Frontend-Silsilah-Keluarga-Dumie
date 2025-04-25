@@ -9,7 +9,7 @@ function Family({ keluargaId, namaKeluarga }) {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/familymember")
+      .get(`${process.env.REACT_APP_API_URL}/familymember`)
       .then((response) => {
         const selectedFamily = response.data.filter((member) => member.keluarga_id === keluargaId);
         setFamilyMembers(selectedFamily);
